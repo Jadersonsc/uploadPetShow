@@ -1,0 +1,120 @@
+.header{
+    background-color: rgb(22, 22, 22) ;
+    display: flex;
+    height: 115px;
+
+align-items: center;
+    
+}
+.logo{
+    top: 0px;
+    padding-left: 50px;
+    padding-right: 70px;
+position: relative;
+max-height: 90px;
+}
+
+.header a{
+        display: flex;
+        align-items: center;
+        text-decoration: none ;
+        color: #fff;
+        
+}
+
+.header .title-group{
+
+color: #fff;
+        }
+        .header .title-group i {
+            padding-right: 5px;
+            color: #fff;
+                
+                }
+                
+    
+            
+
+
+
+
+
+
+
+
+
+
+
+                @import url(https://fonts.googleapis.com/css?family=Montserrat:300&subset=latin-ext);
+
+
+
+nav {
+	margin: 0 auto;
+	max-width: 800px;
+	background: transparent;
+	box-shadow:0 3px 15px rgba(0,0,0,.15);
+}
+
+nav::after {
+	display: block;
+	content: '';
+	clear: both;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+    font-size: 0.8em;
+}
+
+nav ul li a {
+	display: block;
+	color: rgba(255, 255, 255, .9);
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-top: 2px solid transparent;
+	border-bottom: 2px solid transparent;
+	transition: all .3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+	background: rgb(0, 0, 0);
+}
+
+nav ul li a:focus {
+	color: white;
+}
+
+nav ul li a:not(:only-child)::after {
+	padding-left: 4px;
+	content: ' ▾';
+}
+
+nav ul li ul li {
+	min-width: 190px;
+}
+
+nav ul li ul li a {
+	background: transparent;
+	color: #555;
+	border-bottom: 1px solid #DDE0E7;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+	background: #eee;
+	color: #111;
+}
+
+.admin{
+    border: 1px solid #fff; border-radius: 30px; color: #fff; padding-left: 15px; padding-right: 15px; margin-right: -50px; 
+  }
+

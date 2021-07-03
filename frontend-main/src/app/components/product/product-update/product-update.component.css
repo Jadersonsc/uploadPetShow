@@ -1,0 +1,21 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo{
+    margin-bottom: 20px;
+    }
+    
+
+.btn{
+    background-color: #00af00;
+    color: #fff;
+}
+.btn:hover{
+    background-color: #00d400;
+}
+button{
+    margin: 20px 15px 0px 0px;
+    
+}

@@ -1,0 +1,18 @@
+.btn{
+    background-color: red;
+    color: #fff;
+}
+button{
+    margin: 20px 15px 0px 0px;
+    
+}
+.titulo{
+    margin-bottom: 30px;
+    }
+.btn:hover{
+    background-color: rgb(180, 0, 0);
+}
+form{
+    display: flex;
+    flex-direction: column;
+}

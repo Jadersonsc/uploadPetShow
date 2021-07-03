@@ -1,0 +1,14 @@
+.footer{
+
+    position: fixed;
+display: flex;
+    bottom: 0;
+    justify-content: flex-end;
+    font-size: 11pt;
+}
+
+.footer > span{
+
+font-weight: 300;
+
+}

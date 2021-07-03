@@ -1,0 +1,12 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Arthur",
+      "endereco": "Rua das Laranjeiras, 831",
+      "cep": "11111-000",
+      "price": "48 9 9999-9999",
+      "horario": "15h00"
+    }
+  ]
+}

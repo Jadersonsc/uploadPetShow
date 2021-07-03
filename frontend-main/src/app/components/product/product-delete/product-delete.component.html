@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-title class="titulo">Excluir Produto</mat-card-title>
+    <form action="">
+
+        
+        <mat-form-field>
+            <input matInput placeholder="Nome" [value]="product.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [value]="product.price"  name="price" disabled>
+        </mat-form-field>
+        
+        <mat-form-field>
+            <input matInput placeholder="Endereço" [(ngModel)]="product.endereco"  name="endereco" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CEP" [(ngModel)]="product.cep"  name="cep" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Melhor Horário" [(ngModel)]="product.horario"  name="horario" disabled>
+        </mat-form-field>
+    </form>
+    
+<button (click)="deleteProduct()" class="btn" mat-raised-button >Excluir</button>
+
+<button (click)="cancel()"  mat-raised-button >Cancelar</button>
+
+</mat-card>
+
+
+

@@ -1,0 +1,16 @@
+ul li{
+    color: black;
+}
+table{
+
+    width: 100%;
+}
+
+.edit > i{
+    margin-right: 6px;
+    color: #d9cd26;
+}
+
+.delete > i{
+    color:#e35e6b;
+}

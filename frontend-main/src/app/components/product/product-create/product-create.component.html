@@ -1,0 +1,233 @@
+
+
+<mat-card>
+
+
+
+
+
+    <mat-card-title class="titulo">Agendamentos</mat-card-title>
+    <form action="">
+
+        <mat-form-field>
+            
+            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="product.price"  name="price">
+        </mat-form-field>
+
+                <mat-form-field>
+                        <input matInput placeholder="Endereço" [(ngModel)]="product.endereco"  name="endereco">
+                   
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input matInput placeholder="CEP" [(ngModel)]="product.cep"  name="cep">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="Melhor Horário (Ex: 14h30)" [(ngModel)]="product.horario"  name="horario">
+                    </mat-form-field>
+                   
+    </form>
+    
+<button (click)="createProduct()" class="btn" mat-raised-button >Salvar</button>
+
+<button (click)="cancel()" class="btn" mat-raised-button >Cancelar</button>
+
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!--
+
+
+
+<section class="py-5">
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs-->
+        <!--
+        <h1>
+            Agende um Horário<small>, Iremos até você!</small>
+        </h1>
+        <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Agendamentos</li>
+        </ol>
+        <!-- Content Row-->
+  <!--
+        <div class="row">
+            <div class="col-lg-8 mb-4">
+              
+                <p>Atendemos em um raio de 40km</p>
+                <form id="frmCadastro" name="sentMessage" novalidate>
+              
+                            <mat-form-field>
+                           
+                            
+                            <input matInput placeholder="Nome" [(ngModel)]="product.name" name="name" required data-validation-required-message="Por favor coloque o seu nome" />
+                            </mat-form-field>
+                            
+                    <mat-form-field>
+                        <input matInput placeholder="Plano" [(ngModel)]="product.price"  name="price">
+                    </mat-form-field>
+
+
+                    <mat-form-field>
+                        <input matInput placeholder="Endereço" [(ngModel)]="product.endereco"  name="endereco">
+                    </mat-form-field>
+
+
+
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Número</label>
+                            <input class="form-control" id="numero" placeholder="Número/apto/bloco da sua residência" type="text" required data-validation-required-message="Por favor coloque o Número da sua casa" />
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Celular para contato:</label>
+                            <input class="form-control"  type="text" id="txtTelefone" required data-validation-required-message="Por favor coloque o seu celular" />
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>E-mail:</label>
+                            <input class="form-control" type="text" id="txtEmail" required data-validation-required-message="Por favor insira o seu E-mail" />
+                        </div>
+                    </div>
+           <div class="control-group form-group">
+                        <div class="controls">
+  
+                    <select class="form-select" id="txtCodigo" aria-label="Default select example">
+<option selected>Selecione um Horário</option>
+<option value="07h00">07h00</option>
+<option value="08h00">08h00</option>
+<option value="09h00">09h00</option>
+<option value="10h00">10h00</option>
+<option value="11h00">11h00</option>
+
+<option value="14h00">14h00</option>
+<option value="15h00">15h00</option>
+
+<option value="16h00">16h00</option>
+<option value="17h00">17h00</option>
+
+
+</select></div></div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Observações:</label>
+                            <textarea class="form-control" id="obs" rows="10" cols="100" maxlength="999" style="resize: none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages-->
+            <!--
+                    <button class="btn btn-primary"type="button" value="Salvar" id="btnSalvar" onclick="adicionar()">Enviar</button>
+                 </form>
+                <br>
+            <br>
+           
+            </div>
+        </div>
+        <div class="row">
+            <br>
+            
+            <h3>Venha nos Visitar, será um prazer ter você conosco! </h3><br><br><br><br>
+            <!-- Map Column-->
+  <!--
+            <div class="col-lg-8 mb-4">
+                <!-- Embedded Google Map-->  <!--
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6217192543245!2d-48.650041684940284!3d-27.60525518283435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95274a07c116de2f%3A0xb06d7a1839163607!2sR.%2013%20de%20Junho%2C%20874%20-%20Flor%20de%20N%C3%A1polis%2C%20S%C3%A3o%20Jos%C3%A9%20-%20SC%2C%2088106-470!5e0!3m2!1spt-BR!2sbr!4v1620448286545!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <!-- Contact Details Column-->  <!--
+            <div class="col-lg-4 mb-4">
+                <h3>Entre em Contato</h3>
+                <p>
+                    Flor de Nápoles, SJ
+                    <br />
+                    Rua treze de junho, 874
+                    <br />
+                </p>
+                <p>
+                    <abbr title="Phone">Telefone</abbr>
+                    : (48) 9 9187-7081
+                </p>
+                <p>
+                    <abbr title="Email">E-mail</abbr>
+                    :
+                    <a href="mailto:mvscmarcos@gmail.com">mvscmarcos@gmail.com</a>
+                </p>
+                <p>
+                    <abbr title="Hours">Horário</abbr>
+                    : Das 08h00 as 18h00
+                </p>
+            </div>
+        </div>
+        <!-- Contact Form-->
+        <!-- In order to set the email address and subject line for the contact form go to the assets/mail/contact_me.php file.-->
+          <!--
+    </div>
+</section>
+-->  <!--
+<script>
+
+
+
+
+alunos = [];
+                            
+                            
+                            function adicionar(){
+                            
+                            
+                            var codigo = document.getElementById('txtCodigo').value;
+                            var nome = document.getElementById('txtNome').value;
+                            var telefone = document.getElementById('txtTelefone').value;
+                            var email = document.getElementById('txtEmail').value;
+                            var endereco = document.getElementById('endereco').value;
+                            var obs = document.getElementById('obs').value;
+                            var numero = document.getElementById('numero').value;
+                            
+                            
+                            var objAluno = JSON.stringify(
+                            {
+                            codigo_aluno : codigo,
+                            endereco_aluno : endereco,
+                            numero_aluno : numero,
+                            nome_aluno : nome,
+                            telefone_aluno : telefone,
+                            email_aluno : email,
+                            obs_aluno : obs,
+                            });
+                            
+                            
+                            alunos.push(objAluno);
+                            localStorage.setItem("dadosAlunos",JSON.stringify(alunos));
+                            
+                            
+                            alert(alunos);
+                            
+                            
+                            }
+                            
+                            
+    </script>
+-->
+
+
+
+
